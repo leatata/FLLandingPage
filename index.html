@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/img/favicon.png">
 
-    <title>Excel-lente (FormaLibertas)</title>
+    <title>AprendeExcel</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -27,6 +27,12 @@
   </head>
 
   <body>
+    <div class="container">
+      <div class="span4 pull-right">
+	  <button type="button" class="close" data-dismiss="alert">x</button>
+	  <strong>Alert!</strong> Here is my message..
+      </div>
+    </div>
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
@@ -53,7 +59,8 @@
 	  <div class="col-lg-6">
 	    <h1>Aprende Excel con<br/>
 	      FormaLibertas.</h1>
-	    <h2>Este es el curso definitivo para asombrar a tus jefes y compañeros con tu dominio de Excel</H2>
+	    <h2>Este es el curso definitivo para asombrar a tus jefes y compañeros con tu dominio de Excel</h2>
+	    <h2></h2>
 	    <form class="form-inline" role="form">
 	      <div class="form-group">
 		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Introduce tu email">
@@ -62,7 +69,9 @@
 	    </form>					
 	  </div><!-- /col-lg-6 -->
 	  <div class="col-lg-6">
-	    <img class="img-responsive" src="assets/img/ipad-hand.png" alt="">
+	    <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+	      <iframe allowfullscreen="" src="http://www.youtube.com/embed/vF0wUFL54Kk?rel=0" frameborder="0"></iframe>
+	    </div>
 	  </div><!-- /col-lg-6 -->
 	  
 	</div><!-- /row -->
@@ -80,20 +89,20 @@
       
       <div class="row mt centered">
 	<div class="col-lg-4">
-	  <img src="assets/img/ser01.png" width="180" alt="">
+	  <img src="http://placehold.it/180x180" width="180" alt="">
 	  <h4>1 - Empezar desde cero</h4>
 	  <p>Para lanzarte, si es algo que llevas tiempo oyendo y viendo hacer a los demás pero no has hecho mucho más allá que abrir el programa. A través de ejemplos prácticos de economía doméstica o casos de empresa, aprenderás a manejar esta herramienta. Dejarás de evitar conversaciones o probelmas sobre Excel y lo convertirás en uno de los puntos fuertesde tu currículum.</P>
 	</div><!--/col-lg-4 -->
 
 	<div class="col-lg-4">
-	  <img src="assets/img/ser02.png" width="180" alt="">
+	  <img src="http://placehold.it/180x180" width="180" alt="">
 	  <h4>2 - Mejorar tu nivel</h4>
 	  <p>Si te has dado cuenta de la cantidad de posibilidades que tiene, ves que te cuesta demasiado tiempo hacer ciertos trabajos o quires resultados más impactantes. Pisa el acelerador!! conviértete en una persona más efectiva y productiva: trucos, formularios, macros ...</p>
 
 	</div><!--/col-lg-4 -->
 
 	<div class="col-lg-4">
-	  <img src="assets/img/ser03.png" width="180" alt="">
+	  <img src="http://placehold.it/180x180" width="180" alt="">
 	  <h4>3 - Dejar al resto alucinado</h4>
 	  <p>Poder mostrar al jefe, resto de compañeros o clientes resultados que ni siquiera pensaban que se podrían conseguir: integración con presentaciones, creación de aplicacoines o manejo automatizado de datos.</p>
 
@@ -178,18 +187,22 @@
 	       </div><!-- /row -->
 	       
 	       <div class="row mt centered">
-		 <div class="col-lg-6">
+		 <div class="col-lg-3">
+		 </div><!--/col-lg-6 -->
+		 <div class="col-lg-3">
 		   <img class="img-circle" src="assets/img/leatata.jpg" width="140" alt="">
 		   <h4>Leandro Taberner</h4>
 		   <p>Un friki entre los frikis.</p>
 		   <p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
 		 </div><!--/col-lg-6 -->
 
-		 <div class="col-lg-6">
+		 <div class="col-lg-3">
 		   <img class="img-circle" src="assets/img/jesu2.jpg" width="140" alt="">
 		   <h4>Jesús Candenas</h4>
 		   <p>Un ingeniero reconvertido a emprendedor.</p>
 		   <p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
+		 </div><!--/col-lg-6 -->
+		 <div class="col-lg-3">
 		 </div><!--/col-lg-6 -->
 
 	       </div><!-- /row -->
@@ -217,6 +230,7 @@
 		  ================================================== -->
 	     <!-- Placed at the end of the document so the pages load faster -->
 	     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	     <script src="assets/js/main.js"></script>
 	     <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
