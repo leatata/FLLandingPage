@@ -115,7 +115,7 @@ i {
 
 /* HeaderWrap */
 #headerwrap {
-	/* background: url(../img/bg01.jpg) no-repeat center top; */
+	background: url(../img/worldMap.png) no-repeat center top;
 	background-color: #0D9C2F;
 	margin-top: -20px;
 	padding-top:150px;
