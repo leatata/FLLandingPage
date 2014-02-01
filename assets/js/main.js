@@ -6,6 +6,6 @@ bootstrap_alert.warning = function(message) {
 */
 
 $( "Form" ).submit(function( event ) {
-    alert("Gracias!! En breve te enviaremos el correo");
-    event.preventDefault();
+//    alert("Gracias!! En breve te enviaremos el correo");
+//    event.preventDefault();
 });
