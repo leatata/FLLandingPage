@@ -23,9 +23,11 @@ function submitForm (event) {
 	contentType: "application/json",
 	timeout: 5000,
 	success: function(data) {
+	    $('#modalSuccess').modal('toggle')
 	    console.log('process sucess');
 	},
 	error: function() {
+	    $('#modalError').modal('toggle')
 	    console.log('process error');
 	},
     })

@@ -27,13 +27,6 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="span4 pull-right">
-	  <button type="button" class="close" data-dismiss="alert">x</butvton>
-	  <strong>Alert!</strong> Here is my message..
-      </div>
-    </div>
-
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -78,6 +71,39 @@
       </div><!-- /container -->
     </div><!-- /headerwrap -->
     
+    <div id="modalSuccess" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Perfecto!!!</h4>
+	  </div>
+	  <div class="modal-body">
+            Te acabamos de enviar un email.<br>
+	    Revisa tu buzón de correo para acceder al resto del contenido.
+	  </div>
+	  <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div id="modalError" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Upppppss!!!</h4>
+	  </div>
+	  <div class="modal-body">
+            Hemos tenido un problema al enviarte el email.<br>
+	    Por favor inténtalo más tarde.
+	  </div>
+	  <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	  </div>
+	</div>
+      </div>
+    </div>
     
     <div class="container">
       <div class="row mt centered">
@@ -91,7 +117,7 @@
 	<div class="col-lg-4">
 	  <img src="http://placehold.it/180x180" width="180" alt="">
 	  <h4>1 - Empezar desde cero</h4>
-	  <p>Para lanzarte, si es algo que llevas tiempo oyendo y viendo hacer a los demás pero no has hecho mucho más allá que abrir el programa. A través de ejemplos prácticos de economía doméstica o casos de empresa, aprenderás a manejar esta herramienta. Dejarás de evitar conversaciones o probelmas sobre Excel y lo convertirás en uno de los puntos fuertesde tu currículum.</P>
+	  <p>Para lanzarte, si es algo que llevas tiempo oyendo y viendo hacer a los demás pero no has hecho mucho más allá que abrir el programa. A través de ejemplos prácticos de economía doméstica o casos de empresa, aprenderás a manejar esta herramienta. Dejarás de evitar conversaciones o probelmas sobre Excel y lo convertirás en uno de los puntos fuertesde tu currículum.</p>
 	</div><!--/col-lg-4 -->
 
 	<div class="col-lg-4">
