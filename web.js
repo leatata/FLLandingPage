@@ -56,9 +56,10 @@ function sendWelcomeEmail (email) {
 }
 
 // Manage email form submission
-app.post('/', function(req, res) {
+app.post('/ajax', function(req, res) {
     var user = global.db.user;
     var email = req.body.email
+    console.log("post: " + email);
     user
 	.create({
 	    email: email
@@ -69,9 +70,9 @@ app.post('/', function(req, res) {
 	    }
 	    else {
 		sendWelcomeEmail(email);
+		res.send("OK");
 	    }
 	})
-    res.redirect('/');
 });
 
 app.configure(function () {
