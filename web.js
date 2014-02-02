@@ -36,8 +36,8 @@ function sendWelcomeEmail (email) {
     var mailOptions = {
 	from: "Aprende Excel <bidbidhurra@bidbidhurra.com>", // sender address
 	to: email, // list of receivers
-	subject: "Test", // Subject line
-	text: "world Hello", // plaintext body
+	subject: "Curso Excel", // Subject line
+	text: "Curso Excel", // plaintext body
 	html: emailTemplate // html body
     }
 
