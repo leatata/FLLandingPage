@@ -20,8 +20,8 @@ app.get('/', function(request, response) {
 var smtpTransport = nodemailer.createTransport("SMTP",{
     service: "Gmail",
     auth: {
-        user: process.env.EMAIL_USER, //"bidbidhurra@gmail.com",
-        pass: process.env.EMAIL_PWD //"alpaleje1"
+        user: process.env.EMAIL_USER, 
+        pass: process.env.EMAIL_PWD
     }
 });
 
