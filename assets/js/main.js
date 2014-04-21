@@ -72,7 +72,7 @@ $(document).ready(function(){
 });
 
 $("Form").submit(function( event ) {
-    event.preventDefault();
+    //event.preventDefault();
 });
 
 function submitForm (event) {  

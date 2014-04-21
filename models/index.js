@@ -46,7 +46,8 @@ if (!global.hasOwnProperty('db')) {
     global.db = {
         Sequelize: Sequelize,
         sequelize: sq,
-        user: sq.import(__dirname + '/user')
+        prospect: sq.import(__dirname + '/prospects'),
+	payment: sq.import(__dirname + '/payments')
     };
 }
 module.exports = global.db;
