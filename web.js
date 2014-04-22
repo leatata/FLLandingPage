@@ -69,12 +69,13 @@ var smtpTransport = nodemailer.createTransport("SMTP",{
 require.extensions['.txt'] = function (module, filename) {
     module.exports = fs.readFileSync(filename, 'utf8');
 };
-var emailTemplate = require("./emailTemplate.txt");
 
-function sendWelcomeEmail (email) {
+function sendEmail (emailAdress, emailTemplate) {
+    var emailTemplate = require("./" + emailTemplate);
+
     // setup e-mail data with unicode symbols
     var mailOptions = {
-	to: email, // list of receivers
+	to: emailAdress, // list of receivers
 	subject: "Curso Excel", // Subject line
 	text: "Curso Excel", // plaintext body
 	html: emailTemplate // html body
@@ -108,7 +109,7 @@ app.post('/ajax', function(req, res) {
 		console.log('The prospect instance has not been saved:', err)
 	    }
 	    else {
-		sendWelcomeEmail(email);
+		sendEmail(email, "welcomeEmail.txt");
 		res.send("OK");
 	    }
 	})
@@ -145,6 +146,9 @@ app.post('/paypal-ipn', function(req,res){
 		    .complete(function(err) {
 			if (!!err) {
 			    console.log('The payment instance has not been saved:', err)
+			}
+			else {
+			    sendEmail(req.body.payer_email, "paymentEmail.txt");
 			}
 		    })
             }
